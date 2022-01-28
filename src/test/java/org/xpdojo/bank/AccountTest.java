@@ -9,8 +9,8 @@ import static org.junit.Assert.assertThat;
 public class AccountTest {
 
     @Test
-	@Ignore
     public void depositAnAmountToIncreaseTheBalance() {
-        assertThat("your first test isn't implemented", true, is(false));
+	Account account = new Account();
+        assertThat(account.balance()).isEqualTo(0);
     }
 }
